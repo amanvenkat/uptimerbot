@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 async function connect() {
-  mongoose.connect(`mongodb+srv://test:test@cluster0.p5eht.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
+  mongoose.connect(process.env.MOGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
