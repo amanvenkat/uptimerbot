@@ -9,8 +9,8 @@ module.exports = {
   authorPermission: [],
   ownerOnly: false,
   run: async (client, message, args) => {
-    let github_repo = "https://github.com/naveenpoddar/uptimer";
-    let how_to = "https://github.com/naveenpoddar/uptimer#ussage";
+    let github_repo = "https://discordbotlist.com/bots/uptimer-5231/upvote";
+    let how_to = "https://discord.gg/zyc9vDuWpD";
 
     const commands = client.commands
       .filter((c) => c.ownerOnly === false)
@@ -27,12 +27,12 @@ module.exports = {
       .setFooter(`Prefix: "${default_prefix}"`)
       .setThumbnail(client.user.displayAvatarURL())
       .addField(
-        "How to use?",
-        "[Click here](" + how_to + ") to read the Documentation."
+        "Join Our Support Server",
+        "[Support Server](" + how_to + ")"
       )
       .addField(
-        "Github Repository",
-        `[Click here](${github_repo}) to go to the Repository.`
+        "Vote For the Bot",
+        `[Vote Here](${github_repo})`
       )
       .setTimestamp();
 
