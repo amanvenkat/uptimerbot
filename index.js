@@ -25,7 +25,7 @@ const client = new Client({
       require(`./handlers/${handler}`)(client);
     });
 
-    await client.login("ODg5NDc5MDkyOTkzNDE3MjU2.YUh19Q.z_ptpaPTQVEk47LEKADyUwx9BoI");
+    await client.login(process.env.TOKEN);
 
     if (!disable_fetching) fetchProjects(client.projects, client);
   });
